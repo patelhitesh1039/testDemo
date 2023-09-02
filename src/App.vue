@@ -1,20 +1,40 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <TempleIndex msg="Welcome to Your Vue.js App"/>
-</template>
+          <router-view>
+            <router-link to="/">
+              Login 
+            </router-link>
+            <router-link to="/about">
+              About 
+            </router-link>
+          </router-view>
+      </template>
 
 <script>
-import TempleIndex from './components/TempleIndex.vue'
 
 export default {
   name: 'App',
-  components: {
-    TempleIndex
-  }
+
 }
 </script>
 
 <style>
+
+.header {
+    /* background-color: #ebc30f; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+        width: 100%;
+
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

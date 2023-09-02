@@ -1,5 +1,6 @@
 <template>
-    <div class="boddy">
+  <div class="boddy">
+    <MainPage>
         <TempleHeader />
         <LeftButton />
         <TempleGate />
@@ -8,13 +9,15 @@
         <TempleBethak/>
         <TempleThali/>
         <TempleNavigation/>
-
+      </MainPage>
 
 
     </div>
 </template>
 <script>
 import TempleHeader from '../components/header.vue'
+import MainPage from '../components/MainPage.vue'
+
 import LeftButton from '../components/LeftButton.vue'
 import TempleGate from '../components/TmpleGate.vue'
 import TempleGanti from '../components/TempleGanti.vue'
@@ -23,18 +26,13 @@ import TempleBethak from '../components/TempleBethak.vue'
 import TempleThali from '../components/TempleThali.vue'
 import TempleNavigation from '../components/TempleNavigation.vue'
 
-
-
-
-
-
-
 export default {
   name: 'TempleIndex',
   props: {
     msg: String
   },
   components: {
+    MainPage,
     TempleHeader,
     LeftButton,
     TempleGate,

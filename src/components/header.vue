@@ -1,8 +1,9 @@
 <template>
     <div class="header">
         
-        <div class="home-button">
-          <i class="fas fa-home home-icon"></i>
+
+          <div class="home-button">
+      
           <span class="welcome-text">Welcome</span>
           <i class="fas fa-home home-icon"></i>
         </div>
