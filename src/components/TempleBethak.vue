@@ -8,10 +8,10 @@
       @slideChange="onSlideChange"
     >
       <swiper-slide>
-          <img :src="imageUrl" alt="Lord Ganesha" style="height:300px; width:300px; margin-top: 33%;" />
+          <img :src="imageUrl" alt="Lord Ganesha" class="image_response" /> 
       </swiper-slide>
       <swiper-slide>
-        <img :src="imageUrl1" alt="Lord Ganesha" style="height:300px; width:250px; margin-top: 33%;"/>
+        <img :src="imageUrl1" alt="Lord Ganesha" class="image_response"/>
     </swiper-slide>
     
     </swiper>
@@ -62,22 +62,43 @@ export default {
 
 
 <style scoped>
-.ganesha-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-47%, 40%);
-  border-radius: 50%;
-  z-index: 999;
+/* Existing styles */
+
+/* Media query for max-width: 400px */
+@media (max-width: 400px) {
+  .image_response {
+    height:90%;
+    width: 90%;
+    margin-top: 55%;
+    margin-left: 10%;
+    /* Adjust other styles if needed */
+  }
 }
 
-.ganesha-image1 {
-  /* You can remove this class or modify styles as needed */
-  /* Add your custom styles here if necessary */
+/* Media query for max-width: 600px */
+@media (min-width: 401px) and (max-width: 600px) {
+  .image_response {
+    height: 100%;
+    width: 300px;
+    margin-top: 60%;
+    margin-left: 10%;
+    /* Adjust other styles if needed */
+  }
 }
+
+/* Media query for min-width: 601px and max-width: 800px */
+@media (min-width: 601px) and (max-width: 800px) {
+  .image_response {
+    height: 400px;
+    width: 400px;
+    margin-top: 30%;
+    margin-left: 8%;
+    /* Adjust other styles if needed */
+  }
+}
+
+
+
 .image-background1 {
   background-image: url("https://png.pngtree.com/png-clipart/20221210/ourmid/pngtree-single-red-gold-product-display-with-podium-stand-stage-showcase-pedestal-png-image_6518892.png");
   background-repeat: no-repeat;
