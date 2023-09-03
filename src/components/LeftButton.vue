@@ -34,7 +34,7 @@ export default {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 1;
   }
 
   .left-button2 {
@@ -49,7 +49,7 @@ export default {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 1;
   }
 
   .right-button1 {
@@ -64,7 +64,7 @@ export default {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 1;
   }
 
   .right-button2 {
@@ -79,6 +79,6 @@ export default {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 1;
   }
 </style>

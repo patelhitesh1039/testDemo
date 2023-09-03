@@ -21,7 +21,7 @@ export default {
   left: 0;
   right: 0;
   padding: 10px;
-  z-index: 999;
+  z-index: 1;
 }
 .navigation-button {
   display: flex;

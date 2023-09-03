@@ -1,13 +1,9 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-          <router-view>
+          <router-view/>
             <router-link to="/">
-              Login 
             </router-link>
-            <router-link to="/about">
-              About 
-            </router-link>
-          </router-view>
+          
       </template>
 
 <script>
