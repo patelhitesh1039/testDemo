@@ -1,16 +1,16 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router';
-import LoginPage from './components/SideBar.vue';
+import LoginPage from './components/LoginPage.vue';
 import IndeXpage from './components/TempleIndex.vue'
 
 const routes = [
   {
-    name : 'Login',
+    name : 'Home',
     path: '/', 
     component: IndeXpage },
     {
       name : 'LoginPage',
-      path: '/about', 
+      path: '/login', 
       component: LoginPage },
 ];
 

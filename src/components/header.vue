@@ -11,7 +11,12 @@
     </div>
     <div class="sidebar" @click="toggleSidebar" :class="{ 'open': isSidebarOpen }">
       <ul>
-        <li @click="toggleSidebar">Home</li>
+        <li >
+        <router-view/>
+        <router-link to="/login">
+          Login
+        </router-link>
+        </li>
 
         <!-- Add more sidebar items as needed -->
       </ul>
